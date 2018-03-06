@@ -20,9 +20,10 @@ namespace WcfSoapEnableEksternDLLAndCI
 
         }
 
+        MC mc1 = new MC("CD123512", DateTime.Now, true, 250);
         public int mcpris()
         {
-            throw new NotImplementedException();
+            return mc1.PrisMedBrobizz();
         }
     }
 }
