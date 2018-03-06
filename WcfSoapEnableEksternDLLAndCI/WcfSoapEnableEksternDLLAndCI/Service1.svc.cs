@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using BilletLibrary;
 
 namespace WcfSoapEnableEksternDLLAndCI
 {
@@ -12,8 +13,16 @@ namespace WcfSoapEnableEksternDLLAndCI
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
- 
+        Bil bil1 = new Bil("AB123456", DateTime.Now, true, 100000);
 
+        public int bilPris()
+        {
 
+        }
+
+        public int mcpris()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
