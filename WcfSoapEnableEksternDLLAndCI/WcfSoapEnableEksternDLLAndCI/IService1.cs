@@ -16,6 +16,11 @@ namespace WcfSoapEnableEksternDLLAndCI
         [OperationContract]
 
 
+
+
+
+
+        int mcpris();
     }
   
 }
