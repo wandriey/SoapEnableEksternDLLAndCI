@@ -14,6 +14,9 @@ namespace WcfSoapEnableEksternDLLAndCI
     {
 
         [OperationContract]
+         int bilPris();
+
+      
 
 
     }
